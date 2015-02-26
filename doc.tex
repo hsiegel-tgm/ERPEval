@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage{caption}
+\usepackage{placeins}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{listings}
+\usepackage{fixltx2e}
+\usepackage{scrpage2}
+\usepackage{lastpage}
+\clearscrheadfoot
+\pagestyle{scrheadings}
+\usepackage{glossaries}
+\usepackage[
+top    = 2.75cm,
+bottom = 2.00cm,
+left   = 2.50cm,
+right  = 2.00cm]{geometry}
+\setcounter{secnumdepth}{4}
+
+
+\makeglossaries
+
+\newglossaryentry{glossaryVerweis} {name=abkuerzung, description={Langer Name}}
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+% Oberer Teil der Titelseite:
+\includegraphics[width=0.5\textwidth]{images/logo}\\[1cm]    
+
+\LARGE TGM - HTBLuVA Wien XX \\ IT Department  \\[1.5cm]
+
+% Title
+\rule{1.0\textwidth}{1mm}
+{ \huge \bfseries \\[0.4cm]  \huge Volkswagen AG \\ \LARGE ERP-Evaluation \\[0.4cm] }
+
+\rule{1.0\textwidth}{1mm}
+
+
+
+% Author and supervisor
+\noindent 
+\vspace{5cm}
+
+\begin{center}
+\large
+Author: 
+Haidn \textsc{Martin} \&
+Siegel \textsc{Hannah} \&
+Soyka \textsc{Wolfram}
+\end{center}
+
+\vfill
+
+% Bottom of the page
+{\large \today}
+
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+
+
+%HEADER AND FOOTER
+\pagenumbering{arabic}
+\ohead{\headmark}
+\automark{section}
+\ifoot{© Haidn, Siegel, Soyka}
+\ofoot{\pagemark ~of \pageref{LastPage}}
+
+\newpage
+
+\section{Auswahl des Unternehmens}
+
+\section{Volkswagen AG}
+\subsection{Das Unternehmen}
+\subsubsection{Historie}
+
+\subsection{Finanzen}
+\subsection{Produktspektrum}
+\subsection{Standorte und Unternehmensstruktur}
+
+\subsection{Logistik}
+\subsection{Aufbau- und Ablauforganisation}
+\subsection{Markt}
+%Marktumfeld, -situation, -wert, Trends
+
+\subsection{Ziele und Zukunftsaspekte}
+
+\section{Auswahl eines ERP Systemes}
+
+\section{Projekthandbuch}
+\section{Pflichtenheft}
+\section{Vorbereitung Kick Off Meeting}
+
+
+
+
+\newpage
+\listoftables
+\listoffigures
+\printglossaries
+\subsection{Easy Bibliography}
+\begin{thebibliography}{56}
+
+\bibitem{name}
+   \textbf{Who}, When\\
+  \textit{url}
+  \newline last used: dd.mm.yyyy, hh:mm
+ 
+ \bibitem{example} 
+  \textbf{Mister Super-genious}, Answer from 20.01.2015\\
+  \textit{http://www.stackoverflow.com/question}
+  \newline last used: 22.10.2014, 21:00
+\end{thebibliography}
+\end{document}
